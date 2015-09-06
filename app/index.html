@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Application</title>
+    <link href="styles/styles.css" rel="stylesheet"  />
+</head>
+<body id="page-index-body" ng-app="AngularTestApp">
+
+    <div ng-view></div>
+
+    <!--Utils-->
+    <script src="js/utils/guid.js"></script>
+
+    <!--Scripts Javascripts  -->
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular-route/angular-route.min.js"></script>
+
+    <!-- All applications -->
+    <script src="js/app.js"></script>
+
+    <!--Factories-->
+    <script src="js/factories/CandidateFactory.js"></script>
+
+    <!-- All controllers -->
+    <script src="js/controllers/HomeController.js"></script>
+    <script src="js/controllers/CandidateController.js"></script>
+
+    <!--Directives-->
+    <script src="js/directives/candidates/newCandidate.js"></script>
+
+    <script src="js/utils/jsonServerUtils.js"></script>
+
+</body>
+</html>

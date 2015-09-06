@@ -1,0 +1,25 @@
+div#block_search_candidates {
+    margin-bottom: 30px;
+}
+
+input[type="text"].input_line, select.input_line {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+div#block_add_candidates p.form_resume_line {
+    width: 500px;
+}
+
+div#block_add_candidates p.form_resume_line span {
+    text-align: right;
+    vertical-align: top;
+    display: inline-block;
+    float: left;
+}
+
+div#block_add_candidates p.form_resume_line textarea.input_resume {
+    width: 500px;
+    height: 100px;
+}

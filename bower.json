@@ -1,0 +1,26 @@
+{
+  "name": "example-angular-js",
+  "version": "0.0.1",
+  "description": "This application is exemple for using angularJS",
+  "main": "app/index.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "test.",
+    "developement",
+    "javascript"
+  ],
+  "authors": [
+    "cloud Strife"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "1.4.4",
+    "angular-route": "~1.4.4"
+  }
+}

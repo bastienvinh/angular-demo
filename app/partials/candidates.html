@@ -1,0 +1,31 @@
+<h1>{{ title }}</h1>
+
+<div id="block_add_candidates">
+    <input type="hidden" id="block_ad_candidate_init" ng-model="newCandidate"  />
+    <p><span>Name :</span><input class="input_line" type="text" ng-model="newCandidate.name" /></p>
+    <p><span>City :</span><input class="input_line" type="text" ng-model="newCandidate.city" /></p>
+    <p class="form_resume_line">
+        <span>Resume :</span>
+        <textarea class="input_resume" rows="6" cols="5" ng-model="newCandidate.resume"></textarea>
+    </p>
+    <button type="button" ng-click="addNewCandidate(newCandidate)">Add new candidate</button>
+</div>
+
+<div id="block_search_candidates">
+    <p>
+        Name :<input class="input_line" type="text" ng-model="search_query_name">
+        OrderBy : <select class="input_line" ng-model="orderby_candidate_selected">
+            <option value="firstName">Name</option>
+            <option value="city">City</option>
+        </select>
+    </p>
+</div>
+
+<div id="block_lists_candidates">
+    <div class="block_candidate" ng-repeat="candidate in candidates | filter: { name: search_query_name } | orderBy:'+' + orderby_candidate_selected ">
+        <h3>{{ candidate.name }}</h3>
+        <p>City : {{ candidate.city }}</p>
+        <p>Date of Birth : {{ candidate.dateOfBirth | date:'yyyy-MM-dd' }}</p>
+        <p>{{ candidate.resume }}</p>
+    </div>
+</div>
